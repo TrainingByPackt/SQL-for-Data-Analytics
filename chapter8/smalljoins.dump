@@ -1,0 +1,106 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 11.3 (Ubuntu 11.3-0ubuntu0.19.04.1)
+-- Dumped by pg_dump version 11.3 (Ubuntu 11.3-0ubuntu0.19.04.1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: customers; Type: TABLE; Schema: public; Owner: ben
+--
+
+CREATE TABLE public.customers (
+    customer_id integer,
+    first_name text,
+    last_name text,
+    address text
+);
+
+
+ALTER TABLE public.customers OWNER TO ben;
+
+--
+-- Name: order_info; Type: TABLE; Schema: public; Owner: ben
+--
+
+CREATE TABLE public.order_info (
+    order_id integer,
+    customer_id integer,
+    product_code text,
+    qty integer
+);
+
+
+ALTER TABLE public.order_info OWNER TO ben;
+
+--
+-- Name: products; Type: TABLE; Schema: public; Owner: ben
+--
+
+CREATE TABLE public.products (
+    product_code text,
+    name text,
+    stock integer
+);
+
+
+ALTER TABLE public.products OWNER TO ben;
+
+--
+-- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: ben
+--
+
+COPY public.customers (customer_id, first_name, last_name, address) FROM stdin;
+4	Guybrush	Threepwood	Melee Island
+5	Murray	TheSkull	Plunder island
+1	Meat	Hook	Melee Island
+2	Captain	Blondebeard	Puerto Pollo
+3	Griswold	Goodsoup	Blood Island
+\.
+
+
+--
+-- Data for Name: order_info; Type: TABLE DATA; Schema: public; Owner: ben
+--
+
+COPY public.order_info (order_id, customer_id, product_code, qty) FROM stdin;
+1618	3	GROG1	12
+1619	2	POULET3	3
+1620	4	MON123	1
+1621	4	MON636	3
+1622	5	MON666	1
+\.
+
+
+--
+-- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: ben
+--
+
+COPY public.products (product_code, name, stock) FROM stdin;
+MON636	Red Herring	99
+MON666	Murray"s Arm	0
+GROG1	Grog	65
+POULET3	El Pollo Diablo	2
+MON123	Rubber Chicken + Pulley	7
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+
