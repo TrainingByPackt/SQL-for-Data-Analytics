@@ -25,7 +25,6 @@ By the end of the course, you’ll able to use SQL in everyday business scenario
 
 ### Software Requirement
 You’ll also need the following software installed in advance:
-* **OS**: Windows 7, Mac OS X 10.8 or a recent GNU/Linux distribution
 * **Browser**: Google Chrome, Latest Version
 * **IDE**: VSCode IDE, Latest Version
 * **Compiler**: LLVM clang, Latest Version
