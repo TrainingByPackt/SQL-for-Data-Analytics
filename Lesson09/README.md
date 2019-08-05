@@ -1,1 +1,0 @@
-# SQL-for-Data-Analytics
