@@ -1,1 +1,1 @@
-Lesson 01 does not have and executable code files.
+In Lesson 01, we learned how to form hypotheses and generate descriptive statistics that can provide insight into your data. We have implemented five exercises and two activities to understand the insights of the data. We have used dealerships.csv, heights.csv, and  auto_upgrades.csv datasets in these exericses and activities. These datasets can be found in the **Datasets** folder of this repository, here is the link to it: https://github.com/TrainingByPackt/SQL-for-Data-Analytics/tree/master/Datasets
