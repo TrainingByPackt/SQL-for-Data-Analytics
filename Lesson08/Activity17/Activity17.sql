@@ -12,9 +12,9 @@ sqlda=# SELECT pid, query FROM pg_stat_activity WHERE state = 'active';
 
 -- Using the pid value, force the sleep command to terminate using the pg_terminate_background command
 
-Sqlda=# SELECT pg_terminate_backend(14131);
+sqlda=# SELECT pg_terminate_backend(14131);
 
 -- Verify in the first terminal that the sleep command has been terminated. Notice the message returned by the interpreter
 
-Sqlda=# SELECT pg_sleep(1000);
+sqlda=# SELECT pg_sleep(1000);
 
