@@ -29,3 +29,6 @@ You’ll also need the following software installed in advance:
 * [PostgreSQL 10.9](https://www.postgresql.org/download/)
 * Git 2 or later
 
+### Loading the sample datasets
+You can find updated instructions on loading the sample datasets via this [link](https://github.com/TrainingByPackt/SQL-for-Data-Analytics/blob/master/Datasets/Loading_the_sample_datasets_instructions.pdf)
+
