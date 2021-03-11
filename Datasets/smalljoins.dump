@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: customers; Type: TABLE; Schema: public; Owner: ben
+-- Name: customers; Type: TABLE; Schema: public;
 --
 
 CREATE TABLE public.customers (
@@ -32,10 +32,9 @@ CREATE TABLE public.customers (
 );
 
 
-ALTER TABLE public.customers OWNER TO ben;
 
 --
--- Name: order_info; Type: TABLE; Schema: public; Owner: ben
+-- Name: order_info; Type: TABLE; Schema: public;
 --
 
 CREATE TABLE public.order_info (
@@ -46,10 +45,9 @@ CREATE TABLE public.order_info (
 );
 
 
-ALTER TABLE public.order_info OWNER TO ben;
 
 --
--- Name: products; Type: TABLE; Schema: public; Owner: ben
+-- Name: products; Type: TABLE; Schema: public;
 --
 
 CREATE TABLE public.products (
@@ -59,10 +57,9 @@ CREATE TABLE public.products (
 );
 
 
-ALTER TABLE public.products OWNER TO ben;
 
 --
--- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: ben
+-- Data for Name: customers; Type: TABLE DATA; Schema: public;
 --
 
 COPY public.customers (customer_id, first_name, last_name, address) FROM stdin;
@@ -75,7 +72,7 @@ COPY public.customers (customer_id, first_name, last_name, address) FROM stdin;
 
 
 --
--- Data for Name: order_info; Type: TABLE DATA; Schema: public; Owner: ben
+-- Data for Name: order_info; Type: TABLE DATA; Schema: public;
 --
 
 COPY public.order_info (order_id, customer_id, product_code, qty) FROM stdin;
@@ -88,7 +85,7 @@ COPY public.order_info (order_id, customer_id, product_code, qty) FROM stdin;
 
 
 --
--- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: ben
+-- Data for Name: products; Type: TABLE DATA; Schema: public;
 --
 
 COPY public.products (product_code, name, stock) FROM stdin;
