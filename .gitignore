@@ -1,0 +1,16 @@
+.qodo
+
+# Node modules and build output
+node_modules/
+dist/
+
+# Log files
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor directories
+.idea/
+.vscode/
